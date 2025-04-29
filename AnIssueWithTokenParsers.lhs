@@ -112,7 +112,7 @@ Right (BinaryOp (Num 1) ">" (Num 2))
 
 This seems to have done the job. There is still a problem
 though. Consider a case when the precedence is the other way round -
-the `<` and `>` are higher precedence than `<=` and `>=`,
+the `<` and `>` are higher precedence than `\<=` and `>=`,
 
 > simpleExprP1 :: (String -> Parser String) -> Parser SimpleExpr
 > simpleExprP1 sym = E.buildExpressionParser (tableP1 sym) num
